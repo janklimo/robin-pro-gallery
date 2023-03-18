@@ -1,11 +1,10 @@
-import React from 'react';
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
 
 export const About = (): JSX.Element => {
   return (
     <Layout
       customMeta={{
-        title: 'About - Hunter Chang',
+        title: "About - Robin PRO Image Gallery",
       }}
     >
       <h1>About Page</h1>

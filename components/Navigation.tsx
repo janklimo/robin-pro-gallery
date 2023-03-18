@@ -1,14 +1,13 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
 
 const Navigation = (): JSX.Element => {
   return (
-    <nav>
+    <nav className="flex justify-center">
       <Link href="/">
-        <a className="text-gray-900 dark:text-white pr-6 py-4">Home</a>
+        <a className="text-gray-600 dark:text-white pr-8 py-4">Home</a>
       </Link>
       <Link href="/about">
-        <a className="text-gray-900 dark:text-white px-6 py-4">About</a>
+        <a className="text-gray-600 dark:text-white py-4">About</a>
       </Link>
     </nav>
   );
