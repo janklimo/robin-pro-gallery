@@ -1,10 +1,12 @@
+import { FC } from "react";
+
 import Layout from "../components/Layout";
 
-export const About = (): JSX.Element => {
+export const About: FC = () => {
   return (
     <Layout
       customMeta={{
-        title: "About - Robin PRO Image Gallery",
+        title: "What's New - Robin PRO Image Gallery",
       }}
     >
       <h1>About Page</h1>

@@ -1,6 +1,8 @@
+import { FC } from "react";
+
 import Layout from "../components/Layout";
 
-export const Index = (): JSX.Element => {
+export const Index: FC = () => {
   return (
     <Layout>
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center mt-16">
