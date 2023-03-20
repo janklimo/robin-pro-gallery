@@ -79,7 +79,7 @@ export default function Example() {
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6">
+              <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a
@@ -91,7 +91,15 @@ export default function Example() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6"></div>
+                <div className="py-6">
+                  <a
+                    href="https://apps.shopify.com/robin-pro-image-gallery"
+                    target="_blank"
+                    className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition ease-in-out duration-500"
+                  >
+                    Install
+                  </a>
+                </div>
               </div>
             </div>
           </Dialog.Panel>
@@ -170,16 +178,11 @@ export default function Example() {
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
-                      href="#"
+                      href="https://apps.shopify.com/robin-pro-image-gallery"
+                      target="_blank"
                       className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition ease-in-out duration-500"
                     >
                       Get started
-                    </a>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900"
-                    >
-                      Live demo <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
