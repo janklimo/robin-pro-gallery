@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: "#f75175",
-          dark: "#cf3255",
+          light: "#fd87a0",
         },
       },
       typography: (theme) => ({
