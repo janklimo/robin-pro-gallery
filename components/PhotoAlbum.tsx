@@ -17,6 +17,7 @@ const PhotoAlbum: FC<Props> = ({ images }) => {
           <div key={i}>
             <Image
               src={image}
+              placeholder={image.src.endsWith(".gif") ? "empty" : "blur"}
               layout="responsive"
               alt="Robin PRO Photo Gallery changelog update"
               title="Robin PRO Photo Gallery changelog update"

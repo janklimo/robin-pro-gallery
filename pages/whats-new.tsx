@@ -11,6 +11,13 @@ import image20191105 from "public/changelog/20191105.png";
 import image20200618 from "public/changelog/20200618.gif";
 import image20200822 from "public/changelog/20200822.gif";
 import image20201229 from "public/changelog/20201229.gif";
+import image20210126 from "public/changelog/20210126.png";
+import image20211223 from "public/changelog/20211223.png";
+import image20221105 from "public/changelog/20221105.png";
+import image20221228 from "public/changelog/20221228.png";
+import image20230201 from "public/changelog/20230201.png";
+import image20230204 from "public/changelog/20230204.png";
+import image20230405 from "public/changelog/20230405.gif";
 
 import PhotoAlbum from "../components/PhotoAlbum";
 
@@ -28,6 +35,60 @@ export const WhatsNew: FC = () => {
         This is a brief timeline of new Robin PRO features as they were released
         to all merchants.
       </p>
+      <h2 className="text-lg text-primary mb-3">Apr 5, 2023</h2>
+      <p className="text-gray-600">New navigation menu.</p>
+      <PhotoAlbum images={[image20230405]} />
+      <h2 className="text-lg text-primary mb-3">Feb 4, 2023</h2>
+      <p className="text-gray-600">New navigation menu.</p>
+      <PhotoAlbum images={[image20230204]} />
+      <h2 className="text-lg text-primary mb-3">Feb 1, 2023</h2>
+      <p className="text-gray-600">
+        Yearly plans and a revamped <em>Plans</em> page.
+      </p>
+      <PhotoAlbum images={[image20230201]} />
+      <h2 className="text-lg text-primary mb-3">Jan 22, 2023</h2>
+      <p className="text-gray-600 mb-8">
+        Optimized JavaScript bundle to only load the full client app when a
+        gallery is embedded on a given page. This reduces the amount of
+        JavaScript necessary by up to 90%.
+      </p>
+      <h2 className="text-lg text-primary mb-3">Jan 3, 2023</h2>
+      <p className="text-gray-600 mb-8">
+        Redirect directly to the gallery page once a new gallery is created.
+      </p>
+      <h2 className="text-lg text-primary mb-3">Dec 28, 2022</h2>
+      <p className="text-gray-600">
+        Your galleries are now paginated. This makes the app faster for users
+        with a large number of galleries. Use <em>J</em> and <em>K</em> keys for
+        faster navigation.
+      </p>
+      <PhotoAlbum images={[image20221228]} />
+      <h2 className="text-lg text-primary mb-3">Nov 5, 2022</h2>
+      <p className="text-gray-600">
+        Added in-app chat to make reaching out for help faster and easier.
+      </p>
+      <PhotoAlbum images={[image20221105]} />
+      <h2 className="text-lg text-primary mb-3">Sep 27, 2022</h2>
+      <p className="text-gray-600 mb-8">
+        The app will now keep its app section up-to-date for every active theme
+        installed on your store. This way you can switch themes seamlessly.
+      </p>
+      <h2 className="text-lg text-primary mb-3">Sep 18, 2022</h2>
+      <p className="text-gray-600 mb-8">
+        The app now uses session tokens so logging in becomes faster and
+        smoother, especially in Safari.
+      </p>
+      <h2 className="text-lg text-primary mb-3">Dec 23, 2021</h2>
+      <p className="text-gray-600">
+        Added the ability to specify how many rows of images will be shown when
+        using <em>Compact view</em>.
+      </p>
+      <PhotoAlbum images={[image20211223]} />
+      <h2 className="text-lg text-primary mb-3">Jan 26, 2021</h2>
+      <p className="text-gray-600">
+        You can now add <em>alt</em> text to your images
+      </p>
+      <PhotoAlbum images={[image20210126]} />
       <h2 className="text-lg text-primary mb-3">Dec 29, 2020</h2>
       <p className="text-gray-600">
         Adding galleries to your homepage (or any other part of your store that
