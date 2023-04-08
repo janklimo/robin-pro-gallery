@@ -2,7 +2,6 @@ import React from "react";
 import { MetaProps } from "../types/layout";
 import Decorations from "./Decorations";
 import Head from "./Head";
-import Navigation from "./Navigation";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -13,7 +12,6 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
     <>
       <Head customMeta={customMeta} />
-      <Navigation />
       <main className="bg-white">
         <div className="relative isolate">
           <Decorations />

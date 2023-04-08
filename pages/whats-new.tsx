@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 
 import Layout from "../components/Layout";
 
@@ -9,8 +9,6 @@ import image20190924_before from "public/changelog/20190924_before.png";
 import PhotoAlbum from "../components/PhotoAlbum";
 
 export const WhatsNew: FC = () => {
-  const [open, setOpen] = useState<boolean>(false);
-
   return (
     <Layout
       customMeta={{

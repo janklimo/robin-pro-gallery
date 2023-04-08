@@ -7,15 +7,12 @@ import image4 from "public/image4.png";
 import image5 from "public/image5.png";
 import Decorations from "../components/Decorations";
 import Head from "../components/Head";
-import Navigation from "../components/Navigation";
 
 export default function Home() {
   return (
     <>
       <Head />
       <div className="bg-white">
-        <Navigation />
-
         <main>
           <div className="relative isolate">
             <Decorations />
