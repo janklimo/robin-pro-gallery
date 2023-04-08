@@ -1,5 +1,6 @@
 import React from "react";
 import { MetaProps } from "../types/layout";
+import Decorations from "./Decorations";
 import Head from "./Head";
 import Navigation from "./Navigation";
 
@@ -8,21 +9,20 @@ type LayoutProps = {
   customMeta?: MetaProps;
 };
 
-export const WEBSITE_HOST_URL = "https://nextjs-typescript-mdx-blog.vercel.app";
-
 const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
     <>
       <Head customMeta={customMeta} />
-      <header>
-        <div className="max-w-5xl px-8 mx-auto">
-          <div className="py-6">
-            <Navigation />
+      <Navigation />
+      <main className="bg-white">
+        <div className="relative isolate">
+          <Decorations />
+          <div className="overflow-hidden">
+            <div className="mx-auto max-w-7xl px-6 pb-32 pt-40 lg:px-8">
+              {children}
+            </div>
           </div>
         </div>
-      </header>
-      <main>
-        <div className="max-w-5xl px-8 py-4 mx-auto">{children}</div>
       </main>
     </>
   );
