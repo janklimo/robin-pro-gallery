@@ -13,6 +13,7 @@ import image20200822 from "public/changelog/20200822.gif";
 import image20201229 from "public/changelog/20201229.gif";
 import image20210126 from "public/changelog/20210126.png";
 import image20211223 from "public/changelog/20211223.png";
+import image20220921 from "public/changelog/20220921.png";
 import image20221105 from "public/changelog/20221105.png";
 import image20221228 from "public/changelog/20221228.png";
 import image20230201 from "public/changelog/20230201.png";
@@ -77,6 +78,11 @@ export const WhatsNew: FC = () => {
         The app will now keep its app section up-to-date for every active theme
         installed on your store. This way you can switch themes seamlessly.
       </p>
+      <h2 className="text-lg text-primary mb-3">Sep 21, 2022</h2>
+      <p className="text-gray-600">
+        New loading screen for a nicer loading experience.
+      </p>
+      <PhotoAlbum images={[image20220921]} />
       <h2 className="text-lg text-primary mb-3">Sep 18, 2022</h2>
       <p className="text-gray-600 mb-8">
         The app now uses session tokens so logging in becomes faster and
