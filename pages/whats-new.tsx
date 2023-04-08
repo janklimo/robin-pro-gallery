@@ -36,7 +36,11 @@ export const WhatsNew: FC = () => {
         to all merchants.
       </p>
       <h2 className="text-lg text-primary mb-3">Apr 5, 2023</h2>
-      <p className="text-gray-600">New navigation menu.</p>
+      <p className="text-gray-600">
+        Added a way to disable the app temporarily. This is useful when you want
+        to work on your galleries but don't want to remove their embed codes
+        from your pages.
+      </p>
       <PhotoAlbum images={[image20230405]} />
       <h2 className="text-lg text-primary mb-3">Feb 4, 2023</h2>
       <p className="text-gray-600">New navigation menu.</p>
@@ -163,8 +167,8 @@ export const WhatsNew: FC = () => {
       </p>
       <PhotoAlbum images={[image20191002]} />
       <p className="text-gray-600 mb-8">
-        This is especially useful when an upload fails. When you retry, you’ll
-        resume the previous upload. You’ll never have to re-upload the whole
+        This is especially useful when an upload fails. When you retry, you'll
+        resume the previous upload. You'll never have to re-upload the whole
         file from scratch again.
       </p>
       <h2 className="text-lg text-primary mb-3">Sep 24, 2019</h2>
