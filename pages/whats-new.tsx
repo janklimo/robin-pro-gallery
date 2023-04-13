@@ -18,6 +18,7 @@ import image20221105 from "public/changelog/20221105.png";
 import image20221228 from "public/changelog/20221228.png";
 import image20230201 from "public/changelog/20230201.png";
 import image20230204 from "public/changelog/20230204.png";
+import image20230214 from "public/changelog/20230214.png";
 import image20230405 from "public/changelog/20230405.gif";
 
 import PhotoAlbum from "../components/PhotoAlbum";
@@ -43,6 +44,12 @@ export const WhatsNew: FC = () => {
         from your pages.
       </p>
       <PhotoAlbum images={[image20230405]} />
+      <h2 className="text-lg text-primary mb-3">Feb 14, 2023</h2>
+      <p className="text-gray-600">
+        Robin PRO is now officially speed-tested by Shopify ⚡️, meaning it has
+        no impact on the speed of your online store whatsoever.
+      </p>
+      <PhotoAlbum images={[image20230214]} />
       <h2 className="text-lg text-primary mb-3">Feb 4, 2023</h2>
       <p className="text-gray-600">New navigation menu.</p>
       <PhotoAlbum images={[image20230204]} />
