@@ -20,6 +20,8 @@ import image20230201 from "public/changelog/20230201.png";
 import image20230204 from "public/changelog/20230204.png";
 import image20230214 from "public/changelog/20230214.png";
 import image20230405 from "public/changelog/20230405.gif";
+import image20230414_admin from "public/changelog/20230414_admin.png";
+import image20230414_client from "public/changelog/20230414_client.png";
 
 import PhotoAlbum from "../components/PhotoAlbum";
 
@@ -37,6 +39,26 @@ export const WhatsNew: FC = () => {
         This is a brief timeline of new Robin PRO features as they were released
         to all merchants.
       </p>
+      {/**
+       * Changelog entries
+       */}
+      <h2 className="text-lg text-primary mb-3">Apr 14, 2023</h2>
+      <div className="text-gray-600">
+        <p>
+          The app is now even faster thanks to optimized JavaScript bundles.
+        </p>
+        <p>
+          On the storefront, it uses 7% less JavaScript. The{" "}
+          <code>client.js</code> file that gets loaded on every page got reduced
+          to just 1.1kB. The code loaded by the app in the admin interface got
+          trimmed down by 55kB (12%).
+        </p>
+        <p>
+          For the technical reader, this was accomplished by migrating asset
+          bundling from Webpack to Vite.
+        </p>
+      </div>
+      <PhotoAlbum images={[image20230414_client, image20230414_admin]} />
       <h2 className="text-lg text-primary mb-3">Apr 5, 2023</h2>
       <p className="text-gray-600">
         Added a way to disable the app temporarily. This is useful when you want

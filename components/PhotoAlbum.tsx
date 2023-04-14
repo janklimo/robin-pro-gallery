@@ -31,6 +31,7 @@ const PhotoAlbum: FC<Props> = ({ images }) => {
         carousel={{ finite: true }}
         open={index > -1}
         close={() => setIndex(-1)}
+        index={index}
         slides={images}
         render={{ slide: LightboxImage }}
       />
