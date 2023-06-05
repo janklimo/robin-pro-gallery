@@ -22,6 +22,7 @@ import image20230214 from "public/changelog/20230214.png";
 import image20230405 from "public/changelog/20230405.gif";
 import image20230414_admin from "public/changelog/20230414_admin.png";
 import image20230414_client from "public/changelog/20230414_client.png";
+import image20230605 from "public/changelog/20230605.png";
 
 import PhotoAlbum from "../components/PhotoAlbum";
 
@@ -42,6 +43,11 @@ export const WhatsNew: FC = () => {
       {/**
        * Changelog entries
        */}
+      <h2 className="text-lg text-primary mb-3">Jun 5, 2023</h2>
+      <div className="text-gray-600">
+        <p>Added visual cards for choosing between image gallery layouts.</p>
+      </div>
+      <PhotoAlbum images={[image20230605]} />
       <h2 className="text-lg text-primary mb-3">Apr 14, 2023</h2>
       <div className="text-gray-600">
         <p>
