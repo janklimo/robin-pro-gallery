@@ -43,6 +43,18 @@ export const WhatsNew: FC = () => {
       {/**
        * Changelog entries
        */}
+      <h2 className="text-lg text-primary mb-3">Jun 10, 2023</h2>
+      <div className="text-gray-600">
+        <p>Added the ability to configure aspect ratio of grid tiles.</p>
+        <p>
+          You can specify a completely freeform setting or choose form a list of
+          popular aspect ratios. Out of the box, all images in a grid layout
+          will be square.
+        </p>
+      </div>
+      <div className="w-full md:w-3/5 my-6">
+        <video controls src="/changelog/20230610.mp4" />
+      </div>
       <h2 className="text-lg text-primary mb-3">Jun 5, 2023</h2>
       <div className="text-gray-600">
         <p>Added visual cards for choosing between image gallery layouts.</p>
