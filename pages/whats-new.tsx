@@ -23,6 +23,7 @@ import image20230405 from "public/changelog/20230405.gif";
 import image20230414_admin from "public/changelog/20230414_admin.png";
 import image20230414_client from "public/changelog/20230414_client.png";
 import image20230605 from "public/changelog/20230605.png";
+import image20230712 from "public/changelog/20230712.png";
 
 import PhotoAlbum from "../components/PhotoAlbum";
 
@@ -43,6 +44,19 @@ export const WhatsNew: FC = () => {
       {/**
        * Changelog entries
        */}
+      <h2 className="text-lg text-primary mb-3">Jul 12, 2023</h2>
+      <p className="text-gray-600">
+        Lazy loading is now disabled by default but it's configurable under
+        settings. This loads all gallery images at once so users don't have to
+        wait for them when they scroll down the page.
+      </p>
+      <PhotoAlbum images={[image20230712]} />
+      <h2 className="text-lg text-primary mb-3">Jul 9, 2023</h2>
+      <p className="text-gray-600">
+        Galleries and images data is now served from{" "}
+        <code>https://robinpro.org</code> host. This fixes the app for users
+        visiting from China.
+      </p>
       <h2 className="text-lg text-primary mb-3">Jun 10, 2023</h2>
       <div className="text-gray-600">
         <p>Added the ability to configure aspect ratio of grid tiles.</p>
