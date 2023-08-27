@@ -44,6 +44,24 @@ export const WhatsNew: FC = () => {
       {/**
        * Changelog entries
        */}
+      <h2 className="text-lg text-primary mb-3">Aug 27, 2023</h2>
+      <div className="text-gray-600">
+        <p>
+          Galleries now have their own settings so you're free to make every
+          gallery unique!
+        </p>
+        <p>
+          When creating a new gallery you can conveniently clone settings of an
+          existing gallery.
+        </p>
+        <p>
+          Gallery view has been split into 3 tabs, making it wider and easier to
+          work with.
+        </p>
+      </div>
+      <div className="w-full md:w-3/5 my-6">
+        <video controls src="/changelog/20230827.mp4" />
+      </div>
       <h2 className="text-lg text-primary mb-3">Jul 12, 2023</h2>
       <p className="text-gray-600">
         Lazy loading is now disabled by default but it's configurable under
