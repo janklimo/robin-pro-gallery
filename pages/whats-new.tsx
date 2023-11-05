@@ -24,6 +24,7 @@ import image20230414_admin from "public/changelog/20230414_admin.png";
 import image20230414_client from "public/changelog/20230414_client.png";
 import image20230605 from "public/changelog/20230605.png";
 import image20230712 from "public/changelog/20230712.png";
+import image20231105 from "public/changelog/20231105.png";
 
 import PhotoAlbum from "../components/PhotoAlbum";
 
@@ -44,6 +45,12 @@ export const WhatsNew: FC = () => {
       {/**
        * Changelog entries
        */}
+      <h2 className="text-lg text-primary mb-3">Nov 5, 2023</h2>
+      <p className="text-gray-600">
+        Hovering over images with configured links will show an icon indicating
+        that clicking on them will take the user to a new location.
+      </p>
+      <PhotoAlbum images={[image20231105]} />
       <h2 className="text-lg text-primary mb-3">Aug 27, 2023</h2>
       <div className="text-gray-600">
         <p>
