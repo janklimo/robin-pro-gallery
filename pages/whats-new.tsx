@@ -45,6 +45,18 @@ export const WhatsNew: FC = () => {
       {/**
        * Changelog entries
        */}
+      <h2 className="text-lg text-primary mb-3">Feb 22, 2024</h2>
+      <p className="text-gray-600">
+        Improved support for uploads involving a large number of images. You can
+        now comfortably upload thousands of images in one drag-and-drop action
+        without any issues, addressing previous concerns where a large number of
+        images could lead to request timeouts and images being dropped.
+      </p>
+      <p className="text-gray-600">
+        Additionally, we've fixed an issue that occasionally caused images to be
+        stored out of order, ensuring a smoother and more reliable upload
+        process.
+      </p>
       <h2 className="text-lg text-primary mb-3">Nov 5, 2023</h2>
       <p className="text-gray-600">
         Hovering over images with configured links will show an icon indicating
