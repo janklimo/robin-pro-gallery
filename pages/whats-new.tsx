@@ -39,12 +39,35 @@ export const WhatsNew: FC = () => {
         What's New?
       </h1>
       <p className="mt-6 mb-10 text-lg leading-8 text-gray-600">
-        This is a brief timeline of new Robin PRO features as they were released
-        to all merchants.
+        This is a brief timeline of major new Robin PRO features as they were
+        released to all merchants.
       </p>
       {/**
        * Changelog entries
        */}
+      <h2 className="text-lg text-primary mb-3">Aug 6, 2024</h2>
+      <p className="text-gray-600">Easily export and download your galleries</p>
+      <div
+        style={{
+          position: "relative",
+          paddingBottom: "55.61277033985582%",
+          height: 0,
+        }}
+        className="mb-6"
+      >
+        <iframe
+          src="https://www.loom.com/embed/1b99151891aa47dd8e35537550feb4f2?sid=d3085abd-1db8-4734-8166-2d1e01a5bc90"
+          frameBorder="0"
+          allowFullScreen
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+          }}
+        />
+      </div>
       <h2 className="text-lg text-primary mb-3">Feb 22, 2024</h2>
       <p className="text-gray-600">
         Improved support for uploads involving a large number of images. You can
