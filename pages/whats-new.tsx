@@ -25,6 +25,7 @@ import image20230414_client from "public/changelog/20230414_client.png";
 import image20230605 from "public/changelog/20230605.png";
 import image20230712 from "public/changelog/20230712.png";
 import image20231105 from "public/changelog/20231105.png";
+import image20240907 from "public/changelog/20240907.png";
 import image20240909 from "public/changelog/20240909.png";
 
 import PhotoAlbum from "../components/PhotoAlbum";
@@ -58,6 +59,14 @@ export const WhatsNew: FC = () => {
         feel like a natural extension of the Shopify admin environment.
       </p>
       <PhotoAlbum images={[image20240909]} />
+      <h2 className="text-lg text-primary mb-3">Sep 7, 2024</h2>
+      <p className="text-gray-600">
+        We've streamlined our app's performance by trimming down its JavaScript
+        file size by 15%. This optimization means faster load times and smoother
+        interactions, giving your online store the speed boost it needs to keep
+        customers engaged and improve conversions.
+      </p>
+      <PhotoAlbum images={[image20240907]} />
       <h2 className="text-lg text-primary mb-3">Aug 6, 2024</h2>
       <p className="text-gray-600">Easily export and download your galleries</p>
       <div
