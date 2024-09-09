@@ -25,6 +25,7 @@ import image20230414_client from "public/changelog/20230414_client.png";
 import image20230605 from "public/changelog/20230605.png";
 import image20230712 from "public/changelog/20230712.png";
 import image20231105 from "public/changelog/20231105.png";
+import image20240909 from "public/changelog/20240909.png";
 
 import PhotoAlbum from "../components/PhotoAlbum";
 
@@ -45,6 +46,18 @@ export const WhatsNew: FC = () => {
       {/**
        * Changelog entries
        */}
+      <h2 className="text-lg text-primary mb-3">Sep 9, 2024</h2>
+      <p className="text-gray-600">
+        The app is now using Shopify's new admin design language. The refreshed
+        interface aligns perfectly with other Shopify admin tools, creating a
+        consistent look and feel throughout the platform.
+      </p>
+      <p className="text-gray-600">
+        By adopting the latest Polaris components and styling, the app now
+        offers improved usability, accessibility, and visual harmony, making it
+        feel like a natural extension of the Shopify admin environment.
+      </p>
+      <PhotoAlbum images={[image20240909]} />
       <h2 className="text-lg text-primary mb-3">Aug 6, 2024</h2>
       <p className="text-gray-600">Easily export and download your galleries</p>
       <div
