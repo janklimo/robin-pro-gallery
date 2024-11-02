@@ -47,6 +47,31 @@ export const WhatsNew: FC = () => {
       {/**
        * Changelog entries
        */}
+      <h2 className="text-lg text-primary mb-3">Nov 2, 2024</h2>
+      <p className="text-gray-600">
+        You can now disable right clicks on your thumbnails and full-size images
+        to protect them from downloading.
+      </p>
+      <div
+        style={{
+          position: "relative",
+          paddingBottom: "55.61277033985582%",
+          height: 0,
+        }}
+        className="mb-6"
+      >
+        <iframe
+          src="https://www.loom.com/embed/c7a08eac9b61497f988cfc465099ce9a?sid=ccc7dcab-e683-4380-ad52-f1b37dd83d59"
+          allowFullScreen
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+          }}
+        />
+      </div>
       <h2 className="text-lg text-primary mb-3">Sep 9, 2024</h2>
       <p className="text-gray-600">
         The app is now using Shopify's new admin design language. The refreshed
