@@ -26,7 +26,7 @@ const Docs: FC<DocsProps> = ({ posts }) => {
       <ul className="divide-y divide-gray-100 border-t border-gray-100">
         {posts.map((post) => (
           <li key={post.slug}>
-            <Link href={`/posts/${post.slug}`}>
+            <Link href={`/docs/${post.slug}`}>
               <a className="group flex items-center justify-between py-4 text-lg">
                 <span className="docs-underline font-medium text-gray-700 transition-colors duration-300 group-hover:text-gray-900">
                   {post.title}
