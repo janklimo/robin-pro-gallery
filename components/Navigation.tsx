@@ -9,6 +9,7 @@ import logo from "public/logo.png";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "What's New", href: "/whats-new" },
+  { name: "Docs", href: "/docs" },
 ];
 
 const Navigation: FC = () => {

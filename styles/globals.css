@@ -14,6 +14,31 @@
   }
 }
 
+/* Docs index title underline: dotted base + solid fill that grows left→right */
+.docs-underline {
+  padding-bottom: 3px;
+  background-image: linear-gradient(
+      to right,
+      theme("colors.primary.DEFAULT"),
+      theme("colors.primary.DEFAULT")
+    ),
+    repeating-linear-gradient(
+      to right,
+      theme("colors.primary.DEFAULT") 0,
+      theme("colors.primary.DEFAULT") 2px,
+      transparent 2px,
+      transparent 5px
+    );
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, left bottom;
+  background-size: 0% 2px, 100% 2px;
+  transition: background-size 350ms ease;
+}
+
+.group:hover .docs-underline {
+  background-size: 100% 2px, 100% 2px;
+}
+
 /* Post styles */
 
 .prose .anchor {
