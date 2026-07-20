@@ -1,0 +1,91 @@
+---
+title: Publishing galleries with embed code
+description: Use a Robin PRO embed code to place a gallery exactly where you want it, inside a blog post, a product description, or a collection description.
+date: "2026-07-20"
+image: "/image1.png"
+---
+
+Every gallery in Robin PRO has a short **embed code**. Paste it anywhere your
+Shopify store accepts HTML and the gallery appears in that exact spot.
+
+Use this when placement matters. It's the way to put a gallery between two
+paragraphs of a blog post, halfway down a product description, or under the
+intro text of a collection.
+
+<Loom id="5001207f053f4f9dbc6cc8e051ed6efd" />
+
+## Copy the embed code
+
+Open your gallery in Robin PRO, go to the **Publish** tab and choose **Embed
+Code**. Hit **Copy** and you'll have something like this on your clipboard:
+
+```html
+<div class="robin-pro" id="de97b4a0-553f-44d1-a732-affd05129043"></div>
+```
+
+That's an empty placeholder. The `id` is your gallery's unique identifier, and
+Robin PRO looks for it when the page loads and renders your images into it.
+Copy it as-is and don't edit it.
+
+## Paste it into the HTML editor
+
+This is the step that trips people up most often:
+
+> The embed code has to go into the **HTML** view of the editor, not the regular
+> rich-text view.
+
+Shopify's rich-text editor has a `<>` button that switches between formatted
+text and the underlying HTML. If you paste the embed code while you're in
+rich-text mode, Shopify escapes it and your visitors see the raw code as text
+instead of a gallery.
+
+So: click `<>` first, paste the code where the gallery should go, switch back,
+and save.
+
+This works anywhere Shopify gives you a rich-text field, including:
+
+- Pages
+- Blog posts
+- Product descriptions
+- Collection descriptions
+
+## Multiple galleries on one page
+
+Paste as many embed codes as you like into the same page. Each one renders its
+own gallery, in the order they appear in the HTML. You can even use the _same_
+gallery's embed code twice on one page and it renders in both places.
+
+## When you don't need embed code at all
+
+If the gallery just needs to sit above or below the page content, rather than in
+the middle of it, skip the embed code entirely.
+
+In the **Publish** tab, open the **Page** sub-tab, pick a page, choose **Before**
+or **After**, and click **Publish**. Robin PRO writes the embed code into that
+page for you. See
+[Publishing a gallery to a page](/docs/publish-a-gallery-to-a-page) for the full
+walkthrough.
+
+There's also a **Robin PRO Image Gallery** section available in your theme
+editor, if you'd rather add galleries there.
+
+Use those when they're good enough, and embed codes when you need precise
+control.
+
+## Troubleshooting
+
+**You see the code as text on the page.** It was pasted in rich-text mode. Open
+the HTML view. If the angle brackets show up escaped as `&lt;div ...`, delete it
+and paste again with the `<>` editor toggled on.
+
+**Nothing appears where the gallery should be.** Check that Robin PRO is enabled
+on your dashboard. Disabling the app hides every gallery on your storefront, and
+Shopify can take up to a minute to catch up after you re-enable it.
+
+**It's stuck on a loading spinner.** The `id` in the embed code is probably
+incomplete or altered. Copy a fresh one from the **Embed Code** tab.
+
+**You get an upgrade message instead of your photos.** The free plan covers up to
+12 images. Upgrading lifts the limit.
+
+Go back to the [Docs](/docs).

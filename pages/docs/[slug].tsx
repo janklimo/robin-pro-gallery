@@ -15,6 +15,7 @@ import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import { WEBSITE_HOST_URL } from "../../components/Head";
 import Layout from "../../components/Layout";
+import Loom from "../../components/Loom";
 import { MetaProps } from "../../types/layout";
 import { PostType } from "../../types/post";
 import { POSTS_PATH, postFilePaths } from "../../utils/mdxUtils";
@@ -27,6 +28,7 @@ const components = {
   Head,
   Image,
   Link,
+  Loom,
 };
 
 type PostPageProps = {
