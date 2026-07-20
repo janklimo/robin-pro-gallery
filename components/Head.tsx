@@ -2,7 +2,7 @@ import NextHead from "next/head";
 import { useRouter } from "next/router";
 import { MetaProps } from "../types/layout";
 
-export const WEBSITE_HOST_URL = "https://klimo.io";
+export const WEBSITE_HOST_URL = "https://www.robinpro.gallery";
 
 const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
   const router = useRouter();
