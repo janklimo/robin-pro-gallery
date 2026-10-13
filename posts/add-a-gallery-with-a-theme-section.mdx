@@ -1,10 +1,129 @@
 ---
 title: Adding a gallery to your theme with a section
-description: Add a Robin PRO gallery to any section of your theme with the Robin PRO Gallery block in the Shopify theme editor.
+description: Add a Robin PRO gallery to your theme with the Robin PRO Gallery section in the Shopify theme editor, on one page or on every page that shares a template.
 date: "2026-10-13"
 image: "/image2.png"
 ---
 
-This guide is coming soon.
+Robin PRO adds a **Robin PRO Gallery** section to your theme editor. Drop it
+into any template, paste your gallery's ID, and the gallery shows up on your
+storefront. No code, nothing to paste into a page's HTML.
+
+## Before you start
+
+Two things need to be in place:
+
+- **The Robin PRO app embed is on.** The section only renders when the app
+  embed is turned on in your current theme. If it's off, Robin PRO shows a
+  banner with a **Turn on in theme editor** button. Click it, then click
+  **Save** in the theme editor.
+- **Your theme is an Online Store 2.0 theme.** All of Shopify's current free
+  themes, like Dawn and Horizon, are. Older themes can't take app sections. If
+  yours is one of them, use the
+  [embed code](/docs/publish-galleries-with-embed-code) instead.
+
+## Copy the gallery ID
+
+Open your gallery in Robin PRO, go to the **Publish** tab and stay on the
+**Theme** sub-tab. Click **Copy** next to the **Gallery ID**. You'll paste it
+into the section in a moment.
+
+## Add a gallery section to your theme
+
+<Loom id="7b15ac867e4449e8a13fc928b77add54" />
+
+1. In Robin PRO, click **Open theme editor** on the **Theme** sub-tab. Or, in
+   your Shopify admin, go to **Online Store → Themes → Customize**.
+2. Use the dropdown at the top of the editor to pick the template you want, for
+   example **Home page** or **Products → Default product**.
+3. In the sidebar, click **Add section**, open the **Apps** tab and choose
+   **Robin PRO Gallery**.
+4. Paste the gallery ID into the **Gallery ID** field.
+5. Drag the section to where the gallery should go, and click **Save**.
+
+Until you paste an ID, the theme editor shows a hint in place of the gallery.
+Your visitors never see that hint. An empty section shows nothing on the live
+storefront.
+
+Want two galleries on the same template? Add two sections, each with its own
+gallery ID.
+
+## Add a gallery to just one page
+
+This is the part that catches most people out.
+
+Your Shopify pages don't each have their own layout. They all share the
+**Default page** template. So if you open **Pages → Default page** in the theme
+editor and add a gallery section there, the gallery appears on **every** page
+that uses that template: your About page, your Contact page, your FAQ, all of
+them.
+
+To put a gallery on one page only, give that page its own template.
+
+<Loom id="f4088be8447648e6911ae48886a3e4f9" />
+
+### 1. Create a new page template
+
+1. In the theme editor, open the dropdown at the top and go to **Pages**.
+2. Click **Create template**.
+3. Give it a name that says what it's for, like `gallery` or `wedding-photos`.
+   Leave it based on **Default page** and click **Create template**.
+
+The editor switches to your new template. It starts as a copy of the default
+one, so it already has the page title and content.
+
+### 2. Add the gallery section to it
+
+Click **Add section**, open the **Apps** tab and choose **Robin PRO Gallery**.
+Paste the gallery ID, drag the section where you want it, and click **Save**.
+
+You're editing the new template only, so the rest of your pages stay as they
+were.
+
+### 3. Assign the template to your page
+
+1. In your Shopify admin, go to **Online Store → Pages** and open the page.
+2. Find the **Template** dropdown on the right and pick the template you just
+   created.
+3. Click **Save**.
+
+Open the page on your storefront and the gallery is there. Every other page
+still uses **Default page** and looks exactly as before.
+
+Need a gallery on another page too? Create another template for it. Or, if a
+few pages should show the same gallery, assign them all the same template.
+
+## When a section isn't the right fit
+
+A section sits between your theme's other sections. It can't go in the middle
+of your page text. If you need that, like a gallery halfway through a blog
+post or inside a product description, use the
+[embed code](/docs/publish-galleries-with-embed-code).
+
+And if the gallery just needs to sit above or below a page's content, you can
+skip the theme editor entirely. See
+[Publishing a gallery to a page](/docs/publish-a-gallery-to-a-page).
+
+## Troubleshooting
+
+**The gallery shows up on all your pages.** You added the section to the
+**Default page** template. Remove it from there, then follow
+[Add a gallery to just one page](#add-a-gallery-to-just-one-page).
+
+**Your new template isn't in the Template dropdown.** Templates belong to a
+theme. Make sure you created it in your **current** (live) theme, not in a draft
+copy, and that you clicked **Save**.
+
+**Robin PRO Gallery isn't under Apps.** Your theme may be too old for app
+sections. Use the [embed code](/docs/publish-galleries-with-embed-code) with a
+**Custom liquid** section instead.
+
+**The section is there but no gallery appears.** Check that the Robin PRO app
+embed is on. Robin PRO shows a banner when it's off. Also check that the
+gallery ID is complete. Copy a fresh one from the **Theme** sub-tab if you're
+not sure.
+
+**You get an upgrade message instead of your photos.** The free plan covers up
+to 12 images. Upgrading lifts the limit.
 
 Go back to the [Docs](/docs).
